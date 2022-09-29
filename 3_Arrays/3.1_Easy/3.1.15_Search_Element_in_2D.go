@@ -45,6 +45,7 @@ func searchElement(arr [][]int, row, target int) bool {
 
 // Approach 2
 // Start from right top corner and navigate accordingly
+// Optimal approach for GFG problem
 // O(m+n)
 func searchNavigate(arr [][]int, target int) bool {
 	r, c := 0, len(arr)-1
@@ -63,6 +64,7 @@ func searchNavigate(arr [][]int, target int) bool {
 }
 
 // Approach 3
+// Optimal approach for Leetcode problem
 // You can assume all the elements to be in a single flattened array by using this:
 // col = [mid%c], row = [mid/c], where c = number of columns
 // O(log(m*n))
