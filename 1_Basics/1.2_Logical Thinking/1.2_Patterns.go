@@ -327,7 +327,7 @@ func main() {
 			fmt.Print(string(byte(k + 64)))
 		}
 		for l = 1; l < i; l++ {
-			fmt.Print(string(byte(k - l + 64 - 1)))
+			fmt.Print(string(byte(i - l + 64)))
 		}
 		fmt.Println()
 	}
@@ -339,13 +339,11 @@ func main() {
 	// BCDE
 	// ABCDE
 	// Tricky
-	count = 0
 	for i = n; i > 0; i-- {
 		for j = i; j <= n; j++ {
 			fmt.Print(string(byte(j + 64)))
 		}
 		fmt.Println()
-		count++
 	}
 	fmt.Println("\n------------")
 
